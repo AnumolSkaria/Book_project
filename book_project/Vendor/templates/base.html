@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Title</title>
+</head>
+<body background="" style="background-color: lightseagreen">
+{#https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500#}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" ></a>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}" ><b>Home </b><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'createbook' %}"><b>CreateBook</b></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link " href="{% url 'listbooks' %}"><b>ListBook</b></a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'addcategory' %}"><b>Add Category</b></a>
+      </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'listcategory' %}"><b>List Category</b></a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'addauthor' %}"><b>Add Author</b></a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'listauthor' %}"><b>List Author</b></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+{%  block content %}
+{% endblock %}
+</body>
+</html>
